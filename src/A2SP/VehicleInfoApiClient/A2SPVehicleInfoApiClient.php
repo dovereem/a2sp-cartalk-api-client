@@ -8,7 +8,7 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
 use JsonException;
 
-class VehicleInfoApiClient
+class A2SPVehicleInfoApiClient
 {
     private $apiUrl = 'https://voertuiginfo.cartalk.nl/2.1/Rest/Transaction/lp';
 

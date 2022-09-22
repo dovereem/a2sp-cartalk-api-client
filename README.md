@@ -9,7 +9,7 @@ See: https://a2sp.nl/diensten/software-leveranciers/voertuiginfo-api/ for more i
 ## Usage:
 
 ```
-$a2spApiClient = new \DOvereem\A2SP\VehicleInfoApiClient\VehicleInfoApiClient('<your api username>', '<your api password>');
+$a2spApiClient = new \DOvereem\A2SP\VehicleInfoApiClient\A2SPVehicleInfoApiClient('<your api username>', '<your api password>');
 $vehicleInformation = $a2spApiClient->getVehicleInformationByLicensePlateNumber('<A valid licenseplate number>');
 ```
 
