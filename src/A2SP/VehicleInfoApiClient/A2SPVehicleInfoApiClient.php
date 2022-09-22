@@ -26,8 +26,8 @@ class A2SPVehicleInfoApiClient
     protected function createGuzzleClient(): Client
     {
         return new Client([
-            'connect_timeout' => 1,
-            'timeout' => 3,
+            'connect_timeout' => 5,
+            'timeout' => 10,
             'http_errors' => false,
             'headers' => [
                 'Accept' => 'application/json'
