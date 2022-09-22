@@ -1,10 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace DOvereem\A2SP;
+namespace DOvereem\A2SP\VehicleInfoApiClient;
 
-use DOvereem\A2SP\Exception\InvalidRequestException;
-use DOvereem\A2SP\Exception\ServiceUnavailableException;
-use DOvereem\A2SP\Exception\UnexpectedApiResponseException;
+use DOvereem\A2SP\VehicleInfoApiClient\Exception\InvalidRequestException;
+use DOvereem\A2SP\VehicleInfoApiClient\Exception\UnexpectedApiResponseException;
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
 use JsonException;
@@ -13,8 +12,8 @@ class VehicleInfoApiClient
 {
     private $apiUrl = 'https://voertuiginfo.cartalk.nl/2.1/Rest/Transaction/lp';
 
-    private string $apiUsername;
-    private string $apiPassword;
+    private $apiUsername;
+    private $apiPassword;
 
     public function __construct(
         string $apiUsername,
