@@ -1,0 +1,31 @@
+{
+    "name": "dovereem/a2sp-cartalk-api-client",
+    "description": "API Client for the A2SP's \"Voertuiginfo\" API at domain cartalk.nl (https://a2sp.nl/diensten/software-leveranciers/voertuiginfo-api/) ",
+    "keywords": [
+        "a2sp",
+        "cartalk",
+        "dutch",
+        "vehicle information",
+        "vehicleinfo",
+        "api",
+        "client"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Damien Overeem",
+            "email": "damien@overeem.org",
+            "homepage": "https://damien.overeem.org"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^6.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DOvereem\\": "src/"
+        }
+    }
+}
